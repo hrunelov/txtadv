@@ -1,7 +1,7 @@
 <command>     ::= <movement>
                 | <action>
 
-<movement>    ::= [go | move | walk] <direction>
+<movement>    ::= ["go" | "move" | "walk"] <direction>
 
 <direction>   ::= <east>
                 | <south>
@@ -10,27 +10,30 @@
                 | <up>
                 | <down>
 
-<east>        ::= east | e
-<south>       ::= south | s
-<west>        ::= west | w
-<north>       ::= north | n
-<up>          ::= up | u
+<east>        ::= "east" | "e"
+<south>       ::= "south" | "s"
+<west>        ::= "west" | "w"
+<north>       ::= "north" | "n"
+<up>          ::= "up" | "u"
+<down>        ::= "down" | "d"
 
-<action>      ::= <verb> <noun> [with <noun>]
+<action>      ::= <verb> <noun> [<preposition> <noun>]
 
 <verb>        ::= <examine>
                 | <pickup>
                 | <engage>
                 | <function>
                 
-<examine>     ::= examine | check
-<pickup>      ::= pickup | take
-<engage>      ::= engage | attack
+<examine>     ::= "examine" | "check"
+<pickup>      ::= "pickup" | "take"
+<engage>      ::= "engage" | "attack"
 
 <noun>        ::= <location>
                 | <inventory>
                 | equipment
                 | <object>
 
-<location>    ::= location | area
-<inventory>   ::= inventory | items
+<location>    ::= "location" | "area
+<inventory>   ::= "inventory" | "items"
+
+<preposition> ::= "with" | "in" | "on" | "under"
