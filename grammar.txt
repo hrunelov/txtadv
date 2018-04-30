@@ -21,7 +21,7 @@
 <verb>        ::= <examine>
                 | <pickup>
                 | <engage>
-                | <custom_verb>
+                | <function>
                 
 <examine>     ::= examine | check
 <pickup>      ::= pickup | take
@@ -30,7 +30,7 @@
 <noun>        ::= <location>
                 | <inventory>
                 | equipment
-                | <custom_noun>
+                | <object>
 
 <location>    ::= location | area
 <inventory>   ::= inventory | items
