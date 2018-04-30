@@ -1,0 +1,19 @@
+<statement>   ::= <movement>
+
+<movement>    ::= <direction>
+                | go <direction>
+                | move <direction>
+                | walk <direction>
+
+<direction>   ::= <east>
+                | <south>
+                | <west>
+                | <north>
+                | <up>
+                | <down>
+
+<east>        ::= east | e
+<south>       ::= south | s
+<west>        ::= west | w
+<north>       ::= north | n
+<up>          ::= up | u
