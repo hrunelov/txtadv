@@ -1,4 +1,4 @@
-<statement>   ::= <movement>
+<command>     ::= <movement>
                 | <action>
 
 <movement>    ::= [go | move | walk] <direction>
@@ -21,8 +21,16 @@
 <verb>        ::= <examine>
                 | <pickup>
                 | <engage>
-                | <open>
+                | <custom_verb>
                 
 <examine>     ::= examine | check
 <pickup>      ::= pickup | take
 <engage>      ::= engage | attack
+
+<noun>        ::= <location>
+                | <inventory>
+                | equipment
+                | <custom_noun>
+
+<location>    ::= location | area
+<inventory>   ::= inventory | items
