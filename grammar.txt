@@ -1,9 +1,7 @@
 <statement>   ::= <movement>
+                | <action>
 
-<movement>    ::= <direction>
-                | go <direction>
-                | move <direction>
-                | walk <direction>
+<movement>    ::= [go | move | walk] <direction>
 
 <direction>   ::= <east>
                 | <south>
@@ -17,3 +15,14 @@
 <west>        ::= west | w
 <north>       ::= north | n
 <up>          ::= up | u
+
+<action>      ::= <verb> <noun> [with <noun>]
+
+<verb>        ::= <examine>
+                | <pickup>
+                | <engage>
+                | <open>
+                
+<examine>     ::= examine | check
+<pickup>      ::= pickup | take
+<engage>      ::= engage | attack
