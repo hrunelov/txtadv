@@ -21,11 +21,17 @@
 
 <verb>        ::= <examine>
                 | <pickup>
+                | <equip>
+                | <unequip>
+                | <drop>
                 | <engage>
                 | <function>
                 
 <examine>     ::= "examine" | "check"
 <pickup>      ::= "pickup" | "take"
+<equip>       ::= "equip"
+<unequip>     ::= "unequip"
+<drop>        ::= "drop" | "discard"
 <engage>      ::= "engage" | "attack"
 
 <noun>        ::= <location>
